@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&family=Source+Code+Pro&display=swap');
+#root
+{
+   height:100%;
+}
+.container
+{
+   height:100vh;
+   width:100%;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.grid-movies
+{
+   display: grid;
+   grid-template-columns: repeat(5,1fr);
+   padding: 3vw;
+}
+
+.theater
+{
+   width:100%;
+   height:60%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.drop-down
+{
+   transition:all 300ms ease-in-out;
+}
+
+.drop-down:hover
+{
+    transform: scale(1.1);
+}
+
+.tickets-grid
+{
+   display: grid;
+   grid-template-columns: repeat(5,1fr);
+   grid-template-rows: repeat(5,1fr);
+   margin-top:10vw;
+   margin-bottom: 5vw;
+}
+
+.movie-card
+{
+    transition: all 300ms ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.movie-card:hover
+{
+   transform: scale(1.1);
+}
+
+.heart
+{
+   transform:scale(1.5);
+}
+
+.movie-container
+{
+   display: flex;
+   justify-content: space-around;
+   background-color: rgba(0,0,0,0.9);
+   color:white;
+   padding:1vw;
+   width:fit-content;
+   margin:3vw;
+   border:2px solid purple;
+   border-radius: 4px;
+}
+.movie-details
+{
+   width:50%;
+   display: flex;
+   justify-content: space-evenly;
+   flex-direction: column;
+}
+.gif-container
+{
+   position: absolute;
+   top:0;
+   left:0;
+   width:100%;
+   height:100%;
+   background-color: rgba(0,0,0,0.7);
+}
+
+.loading
+{
+   top:50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   position: absolute;
+}
+
+.enlarge-icons
+{
+    transition: all 300ms ease-in-out;
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+.enlarge-icons:hover
+{
+   transform: scale(2.5);
+}
+
+.comments-section >*
+{
+   margin-top: 2vh;
+}
+
+.password
+{
+   cursor: pointer;
+   transition:all 300ms ease-in-out;
+}
+
+.password:hover
+{
+   background-color: #8febb8;
+    transform: scale(1.1);
+}
